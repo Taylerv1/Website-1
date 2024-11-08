@@ -39,7 +39,7 @@ body {
 
 .logo::before{
     content:'';
-    background:#081b29;
+    background:#081a27;
     position: absolute;
     top: 0;
     right: 0;
@@ -84,7 +84,7 @@ body {
 
 .text-container h1::before{
     content:'';
-    background:#081b29;
+    background:#081a27;
     position: absolute;
     top: 0;
     right: 0;
@@ -105,7 +105,7 @@ body {
 
 .text-container h3::before{
     content:'';
-    background:#081b29;
+    background:#081a27;
     position: absolute;
     top: 0;
     right: 0;
@@ -124,7 +124,7 @@ body {
 
 .text-container h4::before{
     content:'';
-    background:#081b29;
+    background:#081a27;
     position: absolute;
     top: 0;
     right: 0;
@@ -185,7 +185,7 @@ body {
 
 .btn-box::before{
     content:'';
-    background:#081b29;
+    background:#081a27;
     position: absolute;
     top: 0;
     right: 0;
@@ -226,7 +226,7 @@ body {
 
 .home-sci::before{
     content:'';
-    background:#081b29;
+    background:#081a27;
     position: absolute;
     top: 0;
     right: 0;
@@ -284,15 +284,15 @@ body {
     width: 660px;
     transition: .9s;
     background: transparent;
-    animation: image-hidden .1s forwards;
-    animation-delay: 4s;
+    animation: image-hidden 1s forwards;
+    animation-delay: 3.6s;
     pointer-events: none;
 }
 
 
 .img-hover::after{
     content:'';
-    background:#081b29;
+    background:#081a27;
     position: absolute;
     top: 0;
     right: 0;
@@ -318,7 +318,7 @@ body {
 
 
 @keyframes image-hidden {
-    100% {
+    100%{
         pointer-events: auto;
     }
 }
