@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5% 6% 0 10%;
+    padding: 1.5% 9% 0 10%;
     position: fixed;
     top: 0;
     left: 0;
@@ -46,11 +46,11 @@ body {
     width: 100%;
     height: 100%;
     animation: ShowRight 1s ease forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .navbar a{
-    margin-left: 40px;
+    margin-left: 50px;
     font-size: 22px;
     text-decoration: none;
     font-weight: 500;
@@ -79,6 +79,19 @@ body {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 10px;
+    position: relative;
+}
+
+.text-container h1::before{
+    content:'';
+    background:#081b29;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: ShowRight 1s ease forwards;
+    animation-delay: 1.2s;
 }
 
 .text-container h3{
@@ -86,12 +99,42 @@ body {
     color: #0e6dbb;
     margin-bottom: 20px;
     font-weight: 700;
+    position: relative;
+}
+
+
+.text-container h3::before{
+    content:'';
+    background:#081b29;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: ShowRight 1s ease forwards;
+    animation-delay: 1.5s;
 }
 
 .text-container h4{
     font-size: 16px;
     margin-bottom: 40px;
+    position: relative;
 }
+
+
+.text-container h4::before{
+    content:'';
+    background:#081b29;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: ShowRight 1s ease forwards;
+    animation-delay: 1.8s;
+}
+
+
 
 .btn-box {
     width: 330px;
@@ -99,6 +142,7 @@ body {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 
@@ -128,7 +172,7 @@ body {
 
 .btn-box a::before {
     content: '';
-    background-color: #1a2f4b;
+    background-color: #081b29;
     position: absolute;
     top: 0;
     left: 0;
@@ -136,6 +180,20 @@ body {
     height: 100%;
     width: 0;
     transition: .5s;
+}
+
+
+.btn-box::before{
+    content:'';
+    background:#081b29;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: ShowRight 1s ease forwards;
+    animation-delay: 2s;
+    z-index: 5;
 }
 
 .btn-box a:hover::before {
@@ -163,6 +221,21 @@ body {
     display: inline-flex;
     justify-content: space-between;
     bottom: 40px;
+}
+
+
+.home-sci::before{
+    content:'';
+    background:#081b29;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: ShowRight 1s ease forwards;
+    animation-delay: 2.3s;
+    z-index: 2;
+
 }
 
 
@@ -209,9 +282,28 @@ body {
     top:0px ;
     height: 100%;
     width: 660px;
-    transition: .5s;
+    transition: .9s;
     background: transparent;
+    animation: image-hidden .1s forwards;
+    animation-delay: 4s;
+    pointer-events: none;
 }
+
+
+.img-hover::after{
+    content:'';
+    background:#081b29;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: ShowRight 1s ease forwards;
+    animation-delay: 3s;
+    z-index: 150;
+
+}
+
 
 .img-hover:hover {
     background-color: #081b29;
@@ -224,3 +316,9 @@ body {
     }
 }
 
+
+@keyframes image-hidden {
+    100% {
+        pointer-events: auto;
+    }
+}
