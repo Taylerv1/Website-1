@@ -1,3 +1,9 @@
+:root {
+    --primaryColor:#0e6dbb;
+    --hiddenText:#081a27;
+}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -14,6 +20,7 @@ body {
     background: url('xxx.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: 4;
 }
 
 .header {
@@ -39,7 +46,7 @@ body {
 
 .logo::before{
     content:'';
-    background:#081a27;
+    background:var(--hiddenText);
     position: absolute;
     top: 0;
     right: 0;
@@ -59,7 +66,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #0e6dbb;
+    color: var(--primaryColor);
 }
 
 .home {
@@ -84,7 +91,7 @@ body {
 
 .text-container h1::before{
     content:'';
-    background:#081a27;
+    background:var(--hiddenText);
     position: absolute;
     top: 0;
     right: 0;
@@ -96,7 +103,7 @@ body {
 
 .text-container h3{
     font-size: 30px;
-    color: #0e6dbb;
+    color: var(--primaryColor);
     margin-bottom: 20px;
     font-weight: 700;
     position: relative;
@@ -105,7 +112,7 @@ body {
 
 .text-container h3::before{
     content:'';
-    background:#081a27;
+    background:var(--hiddenText);
     position: absolute;
     top: 0;
     right: 0;
@@ -124,7 +131,7 @@ body {
 
 .text-container h4::before{
     content:'';
-    background:#081a27;
+    background:var(--hiddenText);
     position: absolute;
     top: 0;
     right: 0;
@@ -151,14 +158,14 @@ body {
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #1a2f4b;
-    background-color: #0e6dbb;
+    color: var(--hiddenText);
+    background-color: var(--primaryColor);
     width: 150px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #0e6dbb;
+    border: 2px solid var(--primaryColor);
     border-radius: 8px;
     position: relative;
     z-index: 1;
@@ -167,12 +174,12 @@ body {
 
 .btn-box a:nth-child(2) {
     background-color: transparent;
-    color: #0e6dbb;
+    color: var(--primaryColor);
 }
 
 .btn-box a::before {
     content: '';
-    background-color: #081b29;
+    background-color: var(--hiddenText);
     position: absolute;
     top: 0;
     left: 0;
@@ -185,7 +192,7 @@ body {
 
 .btn-box::before{
     content:'';
-    background:#081a27;
+    background:var(--hiddenText);
     position: absolute;
     top: 0;
     right: 0;
@@ -201,15 +208,15 @@ body {
 }
 
 .btn-box a:hover {
-    color: #0e6dbb;
+    color: var(--primaryColor);
 }
 
 .btn-box a:nth-child(2)::before {
-    background-color: #0e6dbb;
+    background-color: var(--primaryColor);
 }
 
 .btn-box a:nth-child(2):hover {
-    color: #1a2f4b;
+    color: var(--hiddenText);
 }
 
 
@@ -226,7 +233,7 @@ body {
 
 .home-sci::before{
     content:'';
-    background:#081a27;
+    background:var(--hiddenText);
     position: absolute;
     top: 0;
     right: 0;
@@ -242,8 +249,8 @@ body {
 .home-sci a {
     width: 44px;
     height: 44px;
-    color: #0e6dbb;
-    border: 2px solid #0e6dbb;
+    color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
     border-radius: 50px;
     font-size: 25px;
     display: flex;
@@ -258,7 +265,7 @@ body {
 
 .home-sci a::before {
     content:'';
-    background-color:#0e6dbb;
+    background-color:var(--primaryColor);
     z-index: -1;
     position: absolute;
     top: 0;
@@ -273,7 +280,7 @@ body {
 }
 
 .home-sci a:hover {
-    color: #1a2f4b;
+    color: var(--hiddenText);
 }
 
 .img-hover {
